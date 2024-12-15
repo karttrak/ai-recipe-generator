@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.add-ingredient-form {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.add-ingredient-form > input[type='text'] {
+  flex-grow: 1;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  padding: 1em;
+  font-size: inherit;
+}
+
+.add-ingredient-form > button {
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.add-ingredient-form > button:hover {
+  background-color: #222;
+  transition: background-color 0.25s;
+}
+
+.add-ingredient-form > button::before {
+  content: '+';
+  margin-right: 5px;
+}
