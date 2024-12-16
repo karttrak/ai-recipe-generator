@@ -39,9 +39,14 @@ export default function MainContent() {
         <button type="submit">Add ingredient</button>
       </form>
 
-      <IngredientsList ingredients={ingredients} generateRecipe={generateRecipe} />
+      {ingredients.length > 0 ? (
+        <IngredientsList ingredients={ingredients} generateRecipe={generateRecipe} />
+      ) : null}
 
-      <Recipe recipe={recipe} />
-    </main>
+      {recipe ? (
+        <Recipe recipe={recipe} />
+      ) : null}
+      
+      </main>
   );
 }
