@@ -3,7 +3,7 @@ import './styles.css';
 export default function Footer() {
   return (
     <>
-      <footer>MIT License</footer>
+      <footer>Copyright (c) do not steal</footer>
     </>
   );
 }

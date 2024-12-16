@@ -1,14 +1,18 @@
+import ReactMarkdown from "react-markdown"
+
 import './styles.css';
 
-export default function Recipe() {
+export default function Recipe(props: any) {
   return (
     <>
-      <section className="recipe-container">
-        <h2>Chef Claude says:</h2>
-        <ul className="">
-          <li>step one</li>
-        </ul>
-      </section>
+      {props.recipe ?
+        <section className="recipe-container">
+          <h2>Chef Claude Recommends:</h2>
+          <ReactMarkdown>
+            {props.recipe}
+          </ReactMarkdown>
+        </section>
+      : null}
     </>
   );
 }

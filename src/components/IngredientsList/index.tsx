@@ -16,7 +16,7 @@ export default function IngredientsList(props: any) {
             <h3>Ready for a recipe?</h3>
             <p>Generate a recipe from master chef Claude</p>
           </div>
-          <button>Get recipe</button>
+          <button onClick={props.generateRecipe}>Get recipe</button>
         </div>
       ) : null}
     </section>
